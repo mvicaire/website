@@ -56,7 +56,7 @@ const Navbar = () => {
                                                 item.current ? 'bg-gray-900' : 'navlinks hover:text-black',
                                                 'px-3 py-4 rounded-md text-lg font-normal'
                                             )}
-                                            aria-current={item.href ? 'page' : undefined}
+                                            aria-current={item.current ? 'page' : undefined}
                                         >
                                             {item.name}
                                         </Link>
