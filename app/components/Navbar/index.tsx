@@ -29,10 +29,16 @@ const Navbarin: React.FC = () => {
         }
 
         // Listen for new scroll events, here we debounce our `storeScroll` function
-        document.addEventListener('scroll', debounce(storeScroll), { passive: true });
+        const debouncedStoreScroll = debounce(storeScroll);
+        document.addEventListener('scroll', debouncedStoreScroll, { passive: true });
 
         // Update scroll position for first time
         storeScroll();
+
+        // Cleanup to prevent memory leaks
+        return () => {
+            document.removeEventListener('scroll', debouncedStoreScroll);
+        };
     }, [])
     return (
         <>

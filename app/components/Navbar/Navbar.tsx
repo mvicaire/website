@@ -57,7 +57,7 @@ const Navbar = () => {
                                                 'px-3 py-2 rounded-lg text-sm font-semibold transition-all duration-300 hover:scale-105',
                                                 item.name === 'WHAT WE DELIVER' ? 'font-data tracking-widest uppercase text-xs font-bold' : ''
                                             )}
-                                            aria-current={item.href ? 'page' : undefined}
+                                            aria-current={item.current ? 'page' : undefined}
                                         >
                                             {item.name}
                                         </Link>
