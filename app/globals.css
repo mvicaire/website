@@ -3,9 +3,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* SLICK CAROUSEL LINKS */
-@import "slick-carousel/slick/slick.css";
-@import "slick-carousel/slick/slick-theme.css";
+/* SLICK CAROUSEL LINKS - REMOVED */
 
 body {
   margin: 0;
